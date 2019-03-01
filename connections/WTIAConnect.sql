@@ -9,6 +9,9 @@ CREATE table users (
   last_logon DATETIME
 );
 
+ALTER TABLE users
+  ADD weekly_msg BOOLEAN DEFAULT 0;
+
 
 CREATE TABLE teachers (
   user_id INTEGER PRIMARY KEY NOT NULL,
@@ -20,6 +23,9 @@ CREATE TABLE teachers (
 
   FOREIGN KEY(user_id) REFERENCES users(user_id)
 );
+
+ALTER TABLE teachers
+DROP COLUMN weekly_msg;
 
 CREATE TABLE pros (
   user_id INTEGER PRIMARY KEY NOT NULL,
@@ -50,6 +56,9 @@ CREATE TABLE opportunity (
   FOREIGN KEY(requested_by) REFERENCES users(user_id),
   FOREIGN KEY(accepted_speaker) REFERENCES users(user_id)
 );
+
+ALTER TABLE opportunity
+ADD address VARCHAR(120), ADD city VARCHAR(40), ADD zip VARCHAR(10);
 
 
 ## Ken's tables referenced for column names

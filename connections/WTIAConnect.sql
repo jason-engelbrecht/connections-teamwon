@@ -12,6 +12,8 @@ CREATE table users (
 ALTER TABLE users
   ADD weekly_msg BOOLEAN DEFAULT 0;
 
+ALTER TABLE users
+  ADD UNIQUE (email);
 
 CREATE TABLE teachers (
   user_id INTEGER PRIMARY KEY NOT NULL,

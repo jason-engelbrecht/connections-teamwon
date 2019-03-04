@@ -149,7 +149,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
 
 <!--Start of html - IT professional create account form-->
 <div class="container">
-    <div class="col-sm-8 offset-2 justify-content-center">
+    <div class="col-sm-8 offset-md-2 offset-sm-0 justify-content-center">
         <div class="col-sm-12 text-center">
             <h1>Create Your Account</h1>
         </div>

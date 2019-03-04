@@ -149,7 +149,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
 
 <!--Start of html - IT professional create account form-->
 <div class="container">
-    <div class="col-sm-8 offset-2 justify-content-center">
+    <div class="col-sm-8 offset-md-2 offset-sm-0 justify-content-center">
         <div class="col-sm-12 text-center">
             <h1>Create Your Account</h1>
         </div>
@@ -192,7 +192,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
                 <div class="form-group col">
                     <label for="job_title">Job title</label>
                     <input type="text" class="form-control" name="job_title" id="job_title" size="40" maxlength="40"
-                        value="<?php if(isset($_POST['job_title'])) echo $_POST['job_title'] ?>">
+                           value="<?php if(isset($_POST['job_title'])) echo $_POST['job_title'] ?>">
                 </div>
                 <div class="form-group col">
                     <label for="bio">Short biography about you (third-person)</label>

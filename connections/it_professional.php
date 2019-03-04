@@ -120,7 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'POST') {
         $userid = $row['user_id'];
 
         //insert specific IT Professional data into pros db table
-        $query = "INSERT INTO pros (user_id, company, job_title, expertise, qa_interview, lecture, panel, workshop) VALUES ('$userid', '$cmp', '$jt', 'exp', '$qai', '$fpl', '$pnl', '$ws')";
+        $query = "INSERT INTO pros (user_id, company, job_title, expertise, qa_interview, lecture, panel, workshop) VALUES ('$userid', '$cmp', '$jt', '$exp', '$qai', '$fpl', '$pnl', '$ws')";
         $result = @mysqli_query($dbc, $query);
 
         // if the query ran ok.

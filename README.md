@@ -1,2 +1,4 @@
 # connections-teamwon
-Connections project
+Provides a medium for volunteer speakers from industry to connect with high school teachers requesting speaking opportunities.
+
+This pre-production web application allows either a high school teacher or a volunteer speaker to create an account and be connected through speaking opportunities. Once a teacher logs in they are able to post an opportunity to be seen by speakers as well as having the ability to search speakers and contact them directly. When a volunteer speaker logs in, they are presented with a list of the most recently posted opportunities that match their profile. If they still can’t find an opportunity there, then they have the ability to search for one. Once an opportunity is found the speaker can email the teacher and further discuss details, making the intended connection.
